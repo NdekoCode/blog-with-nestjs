@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:web": "turbo ---filter @blog-with-nestjs/web dev",
+    "dev:api": "turbo --filter @blog-with-nestjs/api start:dev",
+    "dev": "pnpm run dev:web && pnpm run dev:api"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.3"
   },
   "keywords": [],
   "author": "",
