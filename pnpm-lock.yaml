@@ -29,6 +29,9 @@ importers:
       dotenv:
         specifier: ^16.5.0
         version: 16.5.0
+      ejs:
+        specifier: ^3.1.10
+        version: 3.1.10
       reflect-metadata:
         specifier: ^0.2.2
         version: 0.2.2
