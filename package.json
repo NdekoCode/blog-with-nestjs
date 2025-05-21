@@ -4,9 +4,9 @@
   "description": "A blog api with turborepo configuration",
   "main": "index.js",
   "scripts": {
-    "dev:web": "turbo ---filter @blog-with-nestjs/web dev",
-    "dev:api": "turbo --filter @blog-with-nestjs/api start:dev",
-    "dev": "pnpm run dev:web && pnpm run dev:api"
+    "dev:web": "pnpm ---filter @blog-with-nestjs/web dev",
+    "dev:api": "pnpm --filter @blog-with-nestjs/api start:dev",
+    "dev": "pnpm run dev:web & pnpm run dev:api"
   },
   "devDependencies": {
     "turbo": "^2.5.3"
