@@ -1,7 +1,7 @@
 {
   "name": "blog-with-nestjs",
   "version": "1.0.0",
-  "description": "",
+  "description": "A blog api with turborepo configuration",
   "main": "index.js",
   "scripts": {
     "dev:web": "turbo ---filter @blog-with-nestjs/web dev",
