@@ -8,7 +8,7 @@
       <div class="p-4 sm:p-7">
         <div class="text-center">
           <h1 class="block text-2xl font-bold text-gray-800 dark:text-white">
-            Sign up
+            <%= title %>
           </h1>
           <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">
             Already have an account?
@@ -38,6 +38,7 @@
                     class="py-2.5 sm:py-3 px-4 block w-full border transition-all duration-300 border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                     required
                     aria-describedby="email-error"
+                    placeholder="Enter your email"
                   />
                   <div
                     class="absolute inset-y-0 hidden pointer-events-none end-0 pe-3"
@@ -75,6 +76,7 @@
                     class="py-2.5 sm:py-3 px-4 block w-full border transition-all duration-300 border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                     required
                     aria-describedby="password-error"
+                    placeholder="Enter your password"
                   />
                   <div
                     class="absolute inset-y-0 hidden pointer-events-none end-0 pe-3"
@@ -114,6 +116,7 @@
                     class="py-2.5 sm:py-3 px-4 block w-full border transition-all duration-300 border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                     required
                     aria-describedby="confirm-password-error"
+                    placeholder="Confirm your password"
                   />
                   <div
                     class="absolute inset-y-0 hidden pointer-events-none end-0 pe-3"
