@@ -1,7 +1,11 @@
 module.exports = {
   content: ['./views/**/*.ejs', './public/**/*.js'],
   theme: {
-    extend: {},
+    extend: {
+      container: {
+        center: true,
+      },
+    },
   },
   plugins: [],
 };

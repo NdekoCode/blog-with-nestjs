@@ -2,12 +2,14 @@ import { Controller, Get, Render } from '@nestjs/common';
 
 @Controller('auth')
 export class AuthController {
-  @Get('/signup')
+  @Get('signup')
   @Render('auth/signup')
   getSignup() {
     return { title: 'Register page' };
   }
+  @Get('login')
+  @Render('auth/login')
   getLogin() {
-    return 'Login page';
+    return { title: 'Login page' };
   }
 }
