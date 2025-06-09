@@ -1,4 +1,7 @@
 {
+  "dependencies": {
+    "@nestjs/mapped-types": "*"
+  },
   "name": "blog-with-nestjs",
   "version": "1.0.0",
   "description": "A blog api with turborepo configuration",
