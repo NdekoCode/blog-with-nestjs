@@ -5,6 +5,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
+import { UserModule } from './user/user.module';
+import { PostModule } from './post/post.module';
 
 @Module({
   imports: [
@@ -23,6 +25,8 @@ import { AuthModule } from './auth/auth.module';
       autoLoadEntities: true,
       synchronize: process.env.NOD_ENV === 'development',
     }),
+    UserModule,
+    PostModule,
   ],
   controllers: [AppController],
   providers: [AppService],
